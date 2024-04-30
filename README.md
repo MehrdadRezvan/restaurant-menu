@@ -1,4 +1,4 @@
-# Simple To-do List
+# Simple Restaurant Menu
 
 *training project*
 
