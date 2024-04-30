@@ -34,7 +34,7 @@ showAllItems()
 menuCategories.map(function(item) {
   var button = document.createElement("BUTTON")
   button.textContent = item.categoryFa
-  button.setAttribute.id = item.category
+  button.setAttribute("id", item.category)
   button.addEventListener("click", filterFn)
   categories.appendChild(button)
 })
@@ -46,7 +46,7 @@ function filterFn(e) {
     buttons[i].classList.remove("selected")
   }
   e.target.classList.add("selected")
-  if (e.target.textContent == "همه آیتم ها" ) {
+  if (e.target.id == "all" ) {
       showAllItems()
   } else {
       var filteredMenu = menuItems.filter(filteringAlgo)
